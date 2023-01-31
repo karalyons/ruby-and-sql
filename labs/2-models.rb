@@ -24,11 +24,13 @@ Salesperson.destroy_all
 new_salesperson = Salesperson.new
 new_salesperson["first_name"] = "Ben"
 new_salesperson["last_name"] = "Block"
+new_salesperson["email"] = "ben@test.com"
 new_salesperson.save
 
 new_salesperson = Salesperson.new
-new_salesperson["first_name"] = "Kara"
-new_salesperson["last_name"] = "Lyons"
+new_salesperson["first_name"] = "Brian"
+new_salesperson["last_name"] = "Eng"
+new_salesperson["email"] = "brian@test.com"
 new_salesperson.save
 
 puts "There are #{Salesperson.all.count} salespeople"
