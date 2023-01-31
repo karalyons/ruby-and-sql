@@ -5,4 +5,27 @@
 
 # String Class
 
+bens_favorite_food = "sushi"
+brians_favorite_food = "tacos"
+
+puts bens_favorite_food.class # type of thing this is (aka object)
+puts brians_favorite_food.class # type of thing this is (aka object)
+
+# String Methods
+
+puts bens_favorite_food.upcase
+puts brians_favorite_food.upcase
+
+# Our own class
+class Dog
+
+  def speak
+    puts "Woof!"
+  end
+
+end
+
+jenkins = Dog.new
+jenkins.speak
+
 # String Methods
