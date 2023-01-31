@@ -34,9 +34,6 @@ new_salesperson.save
 puts "There are #{Salesperson.all.count} salespeople"
 
 
-
-
-
 # 3. write code to display how many salespeople rows are in the database
 
 # ---------------------------------
