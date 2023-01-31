@@ -20,10 +20,22 @@ Salesperson.destroy_all
 # 1b. check out the model file
 
 # 2. insert 1-2 rows in salespeople table.
-puts "There are #{Company.all.count} companies"
 
-new_company = Company.new
-puts new_company.inspect
+new_salesperson = Salesperson.new
+new_salesperson["first_name"] = "Ben"
+new_salesperson["last_name"] = "Block"
+new_salesperson.save
+
+new_salesperson = Salesperson.new
+new_salesperson["first_name"] = "Kara"
+new_salesperson["last_name"] = "Lyons"
+new_salesperson.save
+
+puts "There are #{Salesperson.all.count} salespeople"
+
+
+
+
 
 # 3. write code to display how many salespeople rows are in the database
 
