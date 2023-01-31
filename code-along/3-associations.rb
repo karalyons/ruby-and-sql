@@ -45,4 +45,12 @@ puts "There are #{Contact.all.count} contacts"
 
 apple_contacts = Contact.where({"company_id" => apple["id"]})
 puts "Apple Contacts: #{apple_contacts.count}"
+
 # 3. What is the full name of each contact who works at Apple?
+
+for contact in apple_contacts
+    first_name = contact["first_name"]
+    last_name = contact["last_name"]
+    full_name = "#{first_name} #{last_name}"
+    puts "--- #{full_name}"
+end
